@@ -1,0 +1,8 @@
+{
+	"components": [
+		{"python": {
+			"module": "noradsatellites",
+			"class": "Satellites"
+		}}
+	]
+}

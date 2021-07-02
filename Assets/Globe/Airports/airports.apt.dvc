@@ -1,0 +1,4 @@
+outs:
+- md5: f785f2f111486884d7e28c9f66870c77
+  size: 30001
+  path: airports.apt
