@@ -17,6 +17,14 @@
 				  "cache": true,
 				  "maxLevel": 14,
 				  "apiKeyName": "mapbox"
+				},
+				"attribute": {
+					"url": "Tiles/Earth/Attributes/{z}/{x}/{y}.png",
+					"projection": "globalGeodetic",
+					"format": "xyz",
+					"cache": false,
+					"minLevel": 12,
+					"maxLevel": 12
 				}
 			},
 			"features": {
@@ -36,6 +44,8 @@
 				"map": "Environment/Cloud/cloud_combined_8192.png"
 			},
 			"forest": {
+				"minLevel": 12,
+				"treesPerLinearMeter": 0.04
 			}
 		}},
 		{"planetKinematicBody": {}}
