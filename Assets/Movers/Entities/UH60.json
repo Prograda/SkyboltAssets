@@ -7,7 +7,7 @@
 		{"dynamicBody": {
 			"mass": 6000,
 			"size": [19.8, 2.4, 5],
-			"centerOfMass": [0.678, 0, 0],
+			"centerOfMass": [0.755, 0, 0],
 			"momentOfInertia": [5000, 36000, 33000]
 		}},
 		{"fuselage": {
