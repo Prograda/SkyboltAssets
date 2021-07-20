@@ -25,10 +25,22 @@
 					"cache": false,
 					"minLevel": 12,
 					"maxLevel": 12
+				},
+				"uniformDetail": {
+					"texture": "Environment/Ground/Ground026_1K_Color.jpg"
+				},
+				"albedoToDetail_disabled": {
+					"mappingCube": "Environment/AlbedoToDetailCubeMap.png",
+					"textures": [
+						"Environment/Ground/Ground026_1K_Color.jpg",
+						"Environment/Ground/TexturesCom_Grass0138_1_seamless_S-adjusted.jpg",
+						"Environment/Ground/TexturesCom_Grass0059_1_seamless_S.jpg"
+					]
 				}
 			},
 			"features": {
-				"directory": "Tiles/Earth/Features"
+				"directory": "Tiles/Earth/Features",
+				"buildingTypesFilename": "Environment/BuildingTypes.json"
 			},
 			"atmosphere": {
 				"earthReyleighScatteringCoefficient": 1.24062e-6,
@@ -45,7 +57,8 @@
 			},
 			"forest": {
 				"minLevel": 12,
-				"treesPerLinearMeter": 0.04
+				"treesPerLinearMeter": 0.04,
+				"treeVisibilityRangeMeters": 10000
 			}
 		}},
 		{"planetKinematicBody": {}}
