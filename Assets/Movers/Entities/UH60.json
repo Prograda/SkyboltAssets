@@ -6,15 +6,45 @@
 		}},
 		{"dynamicBody": {
 			"mass": 6000,
-			"size": [19.8, 2.4, 5],
+			"size": [19.8, 4, 2.5],
 			"centerOfMass": [0.755, 0, 0],
 			"momentOfInertia": [5000, 36000, 33000]
 		}},
+		{"wheels": [{
+				"attachmentPoint": [1.92, -1.36, 1.1],
+				"wheelRadius": 0.3,
+				"maxSuspensionTravelLength": 0.25,
+				"stiffness": 25,
+				"dampingCompression": 0.25,
+				"dampingRelaxation": 0.2
+			},{
+				"attachmentPoint": [1.92, 1.36, 1.1],
+				"wheelRadius": 0.3,
+				"maxSuspensionTravelLength": 0.25,
+				"stiffness": 25,
+				"dampingCompression": 0.25,
+				"dampingRelaxation": 0.2
+			},{
+				"attachmentPoint": [-6.8, -0.2, 1.1],
+				"wheelRadius": 0.25,
+				"maxSuspensionTravelLength": 0.25,
+				"stiffness": 4,
+				"dampingCompression": 0.25,
+				"dampingRelaxation": 0.2
+			},{
+				"attachmentPoint": [-6.8, 0.2, 1.1],
+				"wheelRadius": 0.25,
+				"maxSuspensionTravelLength": 0.25,
+				"stiffness": 4,
+				"dampingCompression": 0.25,
+				"dampingRelaxation": 0.2
+			}
+		]},
 		{"fuselage": {
 			"momentMultiplier": 1000,
 			"pitchDueToAngleOfAttack": -0.1,
 			"yawDueToSideSlipAngle": -0.4,
-			"dragConstant": [1, 20, 20]
+			"dragConstant": [1.5, 30, 30]
 		}},
 		{"mainRotor": {
 			"name": "mainRotor1",
@@ -31,7 +61,9 @@
 		}},
 		{"visualModel": {
 			"model": "Models/UH60/UH60_Fuselage.ive",
-			"positionRelBody": [0, 0, 0]
+			"positionRelBody": [0, 0, 0],
+			"uniformSpecular": 0.03,
+			"roughness": 0.8
 		}},
 		{"visualMainRotor": {
 			"model": "Models/UH60/UH60_MainRotor.ive",
