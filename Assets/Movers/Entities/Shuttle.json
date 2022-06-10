@@ -32,6 +32,10 @@
 		{"visualModel": {
 			"model": "Models/Shuttle/Shuttle_Main.ive"
 		}},
+		{"attachmentPoint": {
+			"name": "cockpit",
+			"positionRelBody": [3.67, 0.6766, 0.1082]
+		}},
 		{"assetDescription": {
 			"description": "3d model in public domain",
 			"sourceUrl":"https://nasa3d.arc.nasa.gov/detail/sso-3ds",
