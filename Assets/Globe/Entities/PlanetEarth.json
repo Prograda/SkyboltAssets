@@ -2,13 +2,14 @@
 	"components": [
 		{"planet": {
 			"radius": 6371000,
+			"ocean": true,
 			"surface": {
 				"elevation": {
 					"url": "http://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.pngraw?access_token={key}",
 					"projection": "sphericalMercator",
 					"format": "mapboxElevation",
 					"cache": true,
-					"maxLevel": 12
+					"maxLevel": 14
 				},
 				"albedo": {
 				  "url": "http://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.jpg?access_token={key}",
@@ -23,7 +24,7 @@
 					"projection": "globalGeodetic",
 					"format": "xyz",
 					"cache": false,
-					"minLevel": 12,
+					"minLevel": 10,
 					"maxLevel": 12
 				},
 				"uniformDetail": {
@@ -56,9 +57,10 @@
 				"map": "Environment/Cloud/cloud_combined_8192.png"
 			},
 			"forest": {
-				"minLevel": 12,
+				"minLevel": 11,
+				"maxLevel": 12,
 				"treesPerLinearMeter": 0.04,
-				"treeVisibilityRangeMeters": 10000
+				"treeVisibilityRangeMeters": 12000
 			}
 		}},
 		{"planetKinematicBody": {}}
