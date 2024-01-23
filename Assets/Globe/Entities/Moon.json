@@ -1,16 +1,24 @@
 {
 	"components": [
+		{"node": {
+		}},
 		{"planet": {
 			"radius": 1737100,
-			"ocean": false,
-			"surface": {
+			"ocean": false
+		}},
+		{"planetElevationTileSource": {
+			"tileSource": {
 				"elevation": {
 					"url": "Core/Tiles/Earth/Elevation/{z}/{x}/{y}.png",
 					"projection": "globalGeodetic",
 					"format": "xyz",
 					"cache": false,
 					"maxLevel": 10
-				},
+				}
+			}
+		}},
+		{"visualPlanet": {
+			"surface": {
 				"albedo": {
 					"comment": "Map obtained from https://www.openplanetary.org/opm-basemaps/moon-hillshaded-albedo",
 					"url": "http://s3.amazonaws.com/opmbuilder/301_moon/tiles/w/hillshaded-albedo/{z}/{x}/{y}.png",
@@ -22,6 +30,9 @@
 				}
 			}
 		}},
-		{"planetKinematicBody": {}}
+		{"planetKinematicBody": {}},
+		{"scenarioMetadata": {
+			"scenarioObjectDirectory": "Celestial"
+		}}
 	]
 }

@@ -1,22 +1,30 @@
 {
 	"components": [
+		{"node": {
+		}},
 		{"planet": {
 			"radius": 6371000,
 			"ocean": true,
+			"atmosphere": {}
+		}},
+		{"planetElevationTileSource": {
+			"tileSource": {
+				"url": "http://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.pngraw?access_token={key}",
+				"projection": "sphericalMercator",
+				"format": "mapboxElevation",
+				"cache": true,
+				"maxLevel": 14,
+				"apiKeyName": "mapbox"
+			}
+		}},
+		{"visualPlanet": {
 			"surface": {
-				"elevation": {
-					"url": "http://api.mapbox.com/v4/mapbox.terrain-rgb/{z}/{x}/{y}.pngraw?access_token={key}",
-					"projection": "sphericalMercator",
-					"format": "mapboxElevation",
-					"cache": true,
-					"maxLevel": 14
-				},
 				"albedo": {
 				  "url": "http://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.jpg?access_token={key}",
 				  "projection": "sphericalMercator",
 				  "format": "xyz",
 				  "cache": true,
-				  "maxLevel": 14,
+				  "maxLevel": 15,
 				  "apiKeyName": "mapbox"
 				},
 				"attribute": {
@@ -50,7 +58,7 @@
 				"mieAngstromAlpha": 0.0,
 				"mieAngstromBeta": 5.328e-3,
 				"mieSingleScatteringAlbedo": 0.9,
-				"miePhaseFunctionG": 0.8,
+				"miePhaseFunctionG": 0.93,
 				"useEarthOzone": true
 			},
 			"clouds": {
@@ -63,6 +71,9 @@
 				"treeVisibilityRangeMeters": 12000
 			}
 		}},
-		{"planetKinematicBody": {}}
+		{"planetKinematicBody": {}},
+		{"scenarioMetadata": {
+			"scenarioObjectDirectory": "Celestial"
+		}}
 	]
 }

@@ -2,6 +2,8 @@
 	"components": [
 		{"node": {
 		}},
+		{"motion": {
+		}},
 		{"dynamicBody": {
 			"mass": 35426,
 			"size": [47, 5, 5]
